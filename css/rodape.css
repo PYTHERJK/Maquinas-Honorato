@@ -1,0 +1,47 @@
+.rodape {
+    background-color: var(--preto-cabecalho);
+    padding: 1em 0 ;
+    margin-bottom: 0;
+}
+
+.contato__descricao,
+.icone__face-1 {
+    display: none;
+}
+
+.rodape__lista {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-around;
+    margin: 0 4em;
+}
+
+@media screen and (min-width:1024px) {
+
+    .contato__descricao,
+    .icone__face-1 {
+        display: block;
+
+    }
+
+    .rodape{
+        width: 100vw;
+    }
+
+    .rodape__lista-items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 5%;
+    }
+
+    .whats {
+        height: 5%;
+        margin: 0 .5em;
+    }
+
+    .contato__descricao{
+        font-weight: bold;
+    }
+}
