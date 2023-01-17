@@ -8,9 +8,55 @@
     font-family: var(--fonte-menu);
 }
 
+.cabecalho-claro {
+    display: grid;
+    background-color: var(--branco-cabecalho);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--fonte-menu);
+}
 
 .lista__menu {
     display: none;
+}
+
+.cabecalho__mobile{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 80% auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    border-bottom: 3px solid #FFFAFA ;
+
+}
+
+.cabecalho__mobile-claro{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 80% auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    border-bottom: 3px solid #0f0e0e ;
+
+}
+
+
+
+.cabecalho__mobile-modo {
+    border-left: 3px solid #0f0e0e;
+    width: 100%;
+    margin-right: 0.5em;
+    
+}
+
+.cabecalho__mobile-modo a{
+    width: 80%;
 }
 
 @media screen and (min-width:1024px) {

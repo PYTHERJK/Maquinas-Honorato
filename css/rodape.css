@@ -4,6 +4,14 @@
     margin-bottom: 0;
 }
 
+.rodape-claro {
+    background-color: var(--branco-cabecalho);
+    padding: 1em 0 ;
+    margin-bottom: 0;
+    border-top: 2px solid gray;
+}
+
+
 .contato__descricao,
 .icone__face-1 {
     display: none;
