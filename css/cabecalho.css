@@ -22,7 +22,7 @@
     display: none;
 }
 
-.cabecalho__mobile{
+.cabecalho__mobile {
     width: 100vw;
     display: grid;
     grid-template-columns: 80% auto;
@@ -30,11 +30,11 @@
     text-align: center;
     align-items: center;
     font-family: 'Playfair Display', serif;
-    border-bottom: 3px solid #FFFAFA ;
+    border-bottom: 3px solid #FFFAFA;
 
 }
 
-.cabecalho__mobile-claro{
+.cabecalho__mobile-claro {
     width: 100vw;
     display: grid;
     grid-template-columns: 80% auto;
@@ -42,7 +42,7 @@
     text-align: center;
     align-items: center;
     font-family: 'Playfair Display', serif;
-    border-bottom: 3px solid #0f0e0e ;
+    border-bottom: 3px solid #0f0e0e;
 
 }
 
@@ -52,16 +52,29 @@
     border-left: 3px solid #0f0e0e;
     width: 100%;
     margin-right: 0.5em;
-    
+
 }
 
-.cabecalho__mobile-modo a{
+.cabecalho__mobile-modo a {
     width: 80%;
 }
 
 @media screen and (min-width:1024px) {
-    .cabecalho{
+    .cabecalho {
         width: 100vw;
+    }
+
+    .cabecalho-claro {
+        width: 100vw;
+        border-bottom: 3px solid gray;
+    }
+
+    .cabecalho__mobile {
+        display: none;
+    }
+
+    .cabecalho__mobile-claro {
+        display: none;
     }
 
     .modo-visu {
@@ -70,13 +83,13 @@
 
     .lista__menu {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 10% 80% 10%;
         align-items: center;
     }
 
     .lista__menu-item-texto {
-        grid-column: span 2;
-        font-size: 32px;
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
         font-weight: 700;
         text-align: center;
         justify-content: center;
@@ -84,16 +97,39 @@
         height: 90%;
     }
 
-    .lista__menu-item-texto a{
+    .lista__menu-item-texto-claro {
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        height: 90%;
+    }
+
+    .lista__menu-item-texto a {
         display: grid;
         text-align: center;
         padding: .5em;
         width: 100;
     }
 
-    .lista__menu-item-texto:hover{
-        transform: scale(1.1);
+    .lista__menu-item-texto-claro a {
+        display: grid;
+        text-align: center;
+        padding: .5em;
+        width: 100;
+    }
+
+    .lista__menu-item-texto:hover {
         background-color: var(--preto-fundo);
     }
 
+    .lista__menu-item-texto-claro:hover {
+        background-color: var(--branco-fundo);
+    }
+
+    .lista__menu-item-modo:hover {
+        background-color: var(--preto-fundo);
+    }
 }
