@@ -30,12 +30,11 @@
     border: 2px gray solid;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:980px) {
     .maps{
         display: grid;
         grid-template-rows: auto auto;
         width: 100vw;
-        height: 100%;
     }
 
     .maps iframe{

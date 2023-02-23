@@ -1,14 +1,21 @@
 .rodape {
+
     background-color: var(--preto-cabecalho);
-    padding: 1em 0 ;
-    margin-bottom: 0;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
 }
 
 .rodape-claro {
     background-color: var(--branco-cabecalho);
-    padding: 1em 0 ;
+    padding: 1em 0;
     margin-bottom: 0;
     border-top: 2px solid gray;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 
@@ -25,7 +32,7 @@
     margin: 0 4em;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:980px) {
 
     .contato__descricao,
     .icone__face-1 {
@@ -33,8 +40,9 @@
 
     }
 
-    .rodape{
-        width: 100vw;
+    .rodape, .rodape-claro  {
+        position: absolute;
+        bottom: auto;
     }
 
     .rodape__lista-items {
@@ -49,7 +57,7 @@
         margin: 0 .5em;
     }
 
-    .contato__descricao{
+    .contato__descricao {
         font-weight: bold;
     }
 }

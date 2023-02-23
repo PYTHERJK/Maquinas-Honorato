@@ -3,28 +3,29 @@
 @import url('../css/rodape.css');
 @import url('../css/maps.css');
 
-:root{
-    --branco-fundo:#FFFAFA;
-    --preto-fundo:#4F4F4F;
-    --branco-cabecalho:#F5F5F5;
-    --cinza:#E6E6FA;
-    --fonte-branca:#ffffff;
-    --preto-cabecalho:	#363636;
-    --fonte:16px;
-    --fonte-menu:"Abril Fatface";
-    --fonte-padrao:"Signika";
-    --fonte-preta:#0f0e0e;
+:root {
+    --branco-fundo: #FFFAFA;
+    --preto-fundo: #4F4F4F;
+    --branco-cabecalho: #F5F5F5;
+    --cinza: #E6E6FA;
+    --fonte-branca: #ffffff;
+    --preto-cabecalho: #363636;
+    --fonte: 16px;
+    --fonte-menu: "Abril Fatface";
+    --fonte-padrao: "Signika";
+    --fonte-preta: #0f0e0e;
 }
 
-body{
+body {
     color: var(--fonte-branca);
     background-color: var(--preto-fundo);
     font-size: 16px;
     text-align: center;
     font-family: var(--fonte-padrao);
+    height: 100vh;
 }
 
-.corpo-claro{
+.corpo-claro {
     color: var(--fonte-preta);
     background-color: var(--branco-fundo);
     font-size: 16px;
